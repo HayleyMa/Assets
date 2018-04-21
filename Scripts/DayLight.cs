@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DayLight : MonoBehaviour {
-    public GameObject lightEnemy= null;
-    public GameObject darkEnemy=null;
-    public Light lit;
-    public Color day = Color.cyan;
-    public Color night = Color.blue;
+    public GameObject lightEnemy;
+    public GameObject darkEnemy;
+    public GameObject day;
+    public GameObject night;
+    //public Light lit;
+    //public Color day = Color.cyan;
+    //public Color night = Color.blue;
 	// Use this for initialization
 	void Start () {
         //lit = GetComponent<Light>();
@@ -15,19 +17,24 @@ public class DayLight : MonoBehaviour {
         darkEnemy = GameObject.FindWithTag("Night");
 	}	
 	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.LeftShift)){
+	void Update () {        
+        if (Input.GetKeyDown(KeyCode.E)){
             //night -> day
-            if(lightEnemy.GetComponent<SpriteRenderer>().enabled == true){                
-                lit.color = day;
-                lightEnemy.GetComponent<SpriteRenderer>().enabled = false;
-                darkEnemy.GetComponent<SpriteRenderer>().enabled = true;
-                //day -> night
+            if(night.gameObject.activeSelf == true){
+                //lit.color = day;
+                day.SetActive(true);
+                night.SetActive(false);
+                lightEnemy.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                darkEnemy.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             }
-            else if(darkEnemy.GetComponent<SpriteRenderer>().enabled == true){
-                lit.color = night;
-                darkEnemy.GetComponent<SpriteRenderer>().enabled = false;
-                lightEnemy.GetComponent<SpriteRenderer>().enabled = true;
+            //day -> night
+            else if (day.gameObject.activeSelf == true)
+            {
+                //lit.color = night;
+                day.SetActive(false);
+                night.SetActive(true);
+                lightEnemy.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                darkEnemy.gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
         }
 	}

@@ -20,12 +20,14 @@ public class Move : MonoBehaviour {
     float groundRadius = .2f;
     public LayerMask whatIsGround;
     bool flip = false;
+    GameObject background;
 
     // Use this for initialization
     void Start() {
         playerAudio = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        background = GameObject.FindWithTag("Background");
     }
     // Update is called once per frame
     private void FixedUpdate()
@@ -36,11 +38,13 @@ public class Move : MonoBehaviour {
         rb.velocity = new Vector2(move * speed, rb.velocity.y);
         if (move == -1)
         {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            //background.transform.rotation = Quaternion.Euler(0, 180, 0);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         else if (move == 1)
         {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
+            //background.transform.rotation = Quaternion.Euler(0, 0, 0);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         bool walking = move != 0;
         anim.SetBool("Move", walking);
@@ -70,17 +74,26 @@ public class Move : MonoBehaviour {
         //}
     }
     private void Update(){
-             
+
+        //if (grounded && Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    Physics2D.gravity = new Vector2(0, 0);
+        //    rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        //}
+        //else if (Input.GetKeyUp(KeyCode.Space)){
+        //    Physics2D.gravity = new Vector2(0, -1.0f);
+        //}
         if (grounded && Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            
         }
         float v = Input.GetAxisRaw("Vertical");
         if (v == 1)
         {
             //reverses gravity
             Physics2D.gravity = new Vector2(0, 1.0F);
-            playerAudio.Play();
+            //playerAudio.Play();
             if (!grounded)
             {
                 transform.rotation = Quaternion.Euler(180, 0, 0);
@@ -99,7 +112,7 @@ public class Move : MonoBehaviour {
             }
             
         }
-        Animating(verticalVelocity, v);
+        Animating(rb.velocity.y, v);
     }
 
     void Animating(float vert, float v)

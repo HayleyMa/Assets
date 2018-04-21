@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: 71209edc1c76a44419758e01d90ba3d8
+timeCreated: 1521508943
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: frame
+    21300002: closed
+    21300004: open1
+    21300006: animatedcastledoors_3
+    21300008: open2
+    21300010: open3
+    21300012: open
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frame
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 41}
+        - {x: -32, y: 37}
+        - {x: -32, y: -41}
+        - {x: 32, y: -41}
+        - {x: 32, y: 36}
+        - {x: 25, y: 41}
+      physicsShape:
+      - - {x: -16, y: 41}
+        - {x: -32, y: 32}
+        - {x: -32, y: -41}
+        - {x: 32, y: -41}
+        - {x: 32, y: 41}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: closed
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 58
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 35}
+        - {x: -29, y: 26}
+        - {x: -29, y: -35}
+        - {x: 29, y: -35}
+        - {x: 29, y: 26}
+        - {x: 22, y: 35}
+      physicsShape:
+      - - {x: -29, y: 35}
+        - {x: -29, y: -35}
+        - {x: 29, y: -35}
+        - {x: 29, y: 35}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: open1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 61
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 32.5}
+        - {x: -8, y: 32.5}
+        - {x: -11, y: 29.5}
+        - {x: -11, y: -32.5}
+        - {x: 4, y: -32.5}
+        - {x: 6, y: -31.5}
+        - {x: 10, y: -30.5}
+        - {x: 11, y: -29.5}
+      physicsShape:
+      - - {x: -3, y: 32.5}
+        - {x: -11, y: 26.5}
+        - {x: -11, y: -32.5}
+        - {x: 1, y: -32.5}
+        - {x: 11, y: -28.5}
+        - {x: 11, y: 32.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: animatedcastledoors_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 79
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 32.5}
+        - {x: -11, y: 32.5}
+        - {x: -11, y: -30.5}
+        - {x: -2, y: -32.5}
+        - {x: 11, y: -32.5}
+        - {x: 11, y: 27.5}
+        - {x: 6, y: 31.5}
+      physicsShape:
+      - - {x: -11, y: 32.5}
+        - {x: -11, y: -30.5}
+        - {x: -8, y: -32.5}
+        - {x: 11, y: -32.5}
+        - {x: 11, y: 25.5}
+        - {x: 6, y: 32.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: open2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 31}
+        - {x: -7, y: 29}
+        - {x: -7, y: -31}
+        - {x: 1, y: -31}
+        - {x: 7, y: -28}
+        - {x: 7, y: 31}
+      physicsShape:
+      - - {x: -7, y: 31}
+        - {x: -7, y: -31}
+        - {x: -1, y: -31}
+        - {x: 4, y: -28}
+        - {x: 7, y: -26}
+        - {x: 7, y: 31}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: open3
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 0
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 32}
+        - {x: -11, y: 31}
+        - {x: -11, y: -27}
+        - {x: -6, y: -32}
+        - {x: 5, y: -32}
+        - {x: 6, y: -31}
+        - {x: 6, y: 26}
+        - {x: 4, y: 32}
+      - - {x: 7, y: 25}
+        - {x: 7, y: -32}
+        - {x: 11, y: -32}
+        - {x: 11, y: 29}
+        - {x: 10, y: 29}
+      physicsShape:
+      - - {x: 7, y: 22}
+        - {x: 7, y: -32}
+        - {x: 11, y: -32}
+        - {x: 11, y: 27}
+        - {x: 8, y: 26}
+      - - {x: -8, y: 30}
+        - {x: -11, y: 29}
+        - {x: -11, y: -27}
+        - {x: -1, y: -32}
+        - {x: 3, y: -32}
+        - {x: 5, y: -31}
+        - {x: 5, y: 26}
+        - {x: 2, y: 30}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: open
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 0
+        width: 67
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 27}
+        - {x: -33.5, y: -35}
+        - {x: -29.5, y: -35}
+        - {x: -28.5, y: -10}
+        - {x: -28.5, y: 23}
+        - {x: -32.5, y: 27}
+      - - {x: -17.5, y: 35}
+        - {x: -20.5, y: 32}
+        - {x: -26.5, y: 22}
+        - {x: -26.5, y: -35}
+        - {x: 33.5, y: -35}
+        - {x: 33.5, y: 26}
+        - {x: 26.5, y: 35}
+      physicsShape:
+      - - {x: -33.5, y: 25}
+        - {x: -33.5, y: -35}
+        - {x: -29.5, y: -35}
+        - {x: -29.5, y: 23}
+        - {x: -31.5, y: 25}
+      - - {x: -15.5, y: 35}
+        - {x: -26.5, y: 26}
+        - {x: -26.5, y: -35}
+        - {x: 33.5, y: -35}
+        - {x: 33.5, y: 31}
+        - {x: 20.5, y: 35}
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
