@@ -15,8 +15,12 @@ public class LoadScene : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
         //SceneManager.LoadScene("Level1.1");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
     // Update is called once per frame
     void Update () {
